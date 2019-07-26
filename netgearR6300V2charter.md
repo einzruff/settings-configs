@@ -17,7 +17,7 @@ My steps for OSX:
 7.  Type this:   burnboardid U12H240T00_NETGEAR
 8.  Type this:   nvram set board_id=U12H240T00_NETGEAR
 9.  Now just to be safe, reboot the router.
-10.  You should be able to download the newest firmware for R6300V2 and install it now.
+10.  You should be able to download the newest firmware for R6300V2 and flash it now.
 
 Ref: https://openwrt.org/toh/netgear/telnet.console
 
