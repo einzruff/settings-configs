@@ -20,3 +20,5 @@ My steps for OSX:
 10.  You should be able to download the newest firmware for R6300V2 and install it now.
 
 Ref: https://openwrt.org/toh/netgear/telnet.console
+
+https://www.netgear.com/support/product/R6300v2.aspx#download
