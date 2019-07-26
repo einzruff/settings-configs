@@ -10,6 +10,7 @@ My steps for OSX:
 4.  Get the MAC address for your router. One way is to look on the sticker on the bottom of the router. (Ex: F2BC4DA1B5A7)
 5.  Type the following to enable telnet  (replace {MACaddress} with the one you found in step 4.
   * ./telnetenable 192.168.1.1 {MACaddress} Gearguy Geardog
+  * If that doesn't work, type this: ./telnetenable - {MACaddress} admin password | nc -u 192.168.1.1 23
 6.  Now, try to connect to it with telnet (if you don't have telnet installed do 'brew install telnet' first)
   * telnet 192.168.1.1
   * It should show 'Connected to 192.168.1.1... BusyBox... then a # prompt'
@@ -17,3 +18,5 @@ My steps for OSX:
 8.  Type this:   nvram set board_id=U12H240T00_NETGEAR
 9.  Now just to be safe, reboot the router.
 10.  You should be able to download the newest firmware for R6300V2 and install it now.
+
+Ref: https://openwrt.org/toh/netgear/telnet.console
