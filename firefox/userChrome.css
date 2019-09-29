@@ -1,0 +1,89 @@
+/* userChrome.css - Daphne remix */
+/* Note: Firefox 69+ disables loading of userChrome.css & userContent.css by default
+    to improve performance. To enable, go to about:config and then set
+    toolkit.legacyUserProfileCustomizations.stylesheets to "true" */
+
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
+
+/* quantum notes 
+    addons:
+      - Copy Selected Links
+      - FoxyLink
+      - Group Speed Dial
+      - Open Tabs Next to Current
+      - Vertical Tabs Reloaded
+      - Window Saver 
+    theme:
+      - Firefox Quantum Nightly (mart3ll)
+      - have a fox dream (kumyko)
+      - abstract Firefox (Yanick)
+      - Rainbow Blue (Alix P) [dark]
+      - Arc Dark Theme (Afnan Khan) [dark]
+      - Dark-ish Rainbow (Ultromeo) [dark]
+      - Lollipop Road (jrhd437) [light]
+      - Matrix1 animated (Batja)
+      - Pastel purple and pink Rainbow Clouds (howlaralc)
+      - SebaArt Pink Dream (SebaArt)
+      - Polygons! (Neal)
+      - PlumSparkle (AsquaredM)
+       */
+
+/*****************************************************************************************************************/
+/* 
+ * Recreates the basic functionality of the popular Roomy Bookmarks Toolbar add-on in Firefox 57+.
+ * Uncomment the section with the functionality that you want, leave all other sections commented.
+ * This only affects toplevel toolbar bookmarks and folders, bookmarks and subfolders in folders are unaffected.
+ * The tooltips on long hover (showing bookmark name and link) are unaffected.
+ */
+
+ /* some margin settings, do not comment */
+ .bookmark-item > .toolbarbutton-text {
+    margin-top: -1px !important;
+  }
+  .bookmark-item {
+    margin: -1px !important;
+  }
+  
+  /* No text on toolbar bookmarks; Text on bookmark folders. No hover effect. */
+  .bookmark-item:not([container]):not([open="true"]) > .toolbarbutton-text {
+    display: none !important;
+  }
+  #PlacesToolbarItems > .bookmark-item:not([container]):not([open="true"]) > .toolbarbutton-icon[label]:not([label=""]) {
+    margin-inline-end: 0px !important;
+  }
+  
+  /* No text on toolbar bookmarks; No text on bookmark folders. Show bookmark text on hover. */
+  /*
+  .bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-text {
+    display: none !important;
+  }
+  #PlacesToolbarItems > .bookmark-item:not(:hover):not([open="true"]) > .toolbarbutton-icon[label]:not([label=""]) {
+    margin-inline-end: 0px !important;
+  }
+  */
+  
+  /* No text on toolbar bookmarks; Text on bookmark folders. Show bookmark text on hover. */
+  .bookmark-item:not(:hover):not([container]):not([open="true"]) > .toolbarbutton-text {
+    display: none !important;
+  }
+  
+  #PlacesToolbarItems > .bookmark-item:not(:hover):not([container]):not([open="true"]) > .toolbarbutton-icon[label]:not([label=""]) {
+    margin-inline-end: 0px !important;
+  }
+/*****************************************************************************************************************/
+
+/* hides the native tabs */
+#TabsToolbar {
+  visibility: collapse;
+}
+/* hide top title bar, you may just want to instead uncheck Title Bar in Firefox Customization screen.*/
+#titlebar {
+  visibility: collapse;
+}
+/* hide sidebar header */
+#sidebar-header {
+  visibility: collapse !important;
+} 
