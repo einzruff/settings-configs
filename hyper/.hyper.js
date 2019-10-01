@@ -155,7 +155,7 @@ module.exports = {
     },
     
     //hyperPostprocessing: {
-	//    entry: '/Users/daphnelundquist/Documents/hyperpp-scanline.js'
+	//    entry: '/Users/user/Documents/hyperpp-scanline.js'
     //}
 
     // for advanced config flags please refer to https://hyper.is/#cfg
