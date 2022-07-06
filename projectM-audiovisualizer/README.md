@@ -4,9 +4,8 @@
 
 ## Compile libprojectM
 1. First, build and install libprojectM  (or install from brew?, ensure you have brew installed).   
-   a. Download libprojectM zip and extract to folder   
+   a. Download libprojectM zip and extract to folder      
    b. cd projectm-master   
-	 c. cd projectm-master   
 	    mkdir cmake-build
 	    cd cmake-build   
 	    cmake -DCMAKE_BUILD_TYPE=Release ..   
