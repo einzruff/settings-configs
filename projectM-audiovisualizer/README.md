@@ -1,7 +1,7 @@
 # Using projectM Milkdrop audio visualizer (projectMSDL standalone) 
 
 ##Windows
-   in progress - compiling
+   in progress
      
 
 ##macOS (tested on macOS Monterey 12.4 on Apple Silicon)
