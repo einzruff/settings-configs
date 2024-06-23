@@ -3,7 +3,7 @@ Enables mouse scrolling. Working on Windows 11 23H2.
 Remember to open Command Prompt/Terminal as Administrator.
 ---
 
-# Magic Mouse 2 Scrolling on Windows 10
+# Magic Mouse 2 Scrolling on Windows 10/11
 
 ## General Notes
 * There are a couple paid programs out there that will get scrolling working for your magic mouse. The most popular one asks you to buy a _subscription_ license. **No thanks**.
